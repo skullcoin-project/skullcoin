@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/zeuscoin-project/zeuscoin.git"
+- "url": "https://github.com/gn2509629/zeuscoin.git"
   "dir": "zeuscoin"
 files:
 - "MacOSX10.11.sdk.tar.gz"
