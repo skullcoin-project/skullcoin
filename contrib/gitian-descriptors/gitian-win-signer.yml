@@ -8,7 +8,7 @@ packages:
 - "libssl-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/gn2509629/zeuscoin-detached-sigs.git"
+- "url": "https://github.com/zeuscoin-project/zeuscoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

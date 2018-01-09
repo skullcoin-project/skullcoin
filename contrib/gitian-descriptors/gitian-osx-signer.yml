@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/gn2509629/zeuscoin-detached-sigs.git"
+- "url": "https://github.com/zeuscoin-project/zeuscoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "zeuscoin-osx-unsigned.tar.gz"

@@ -28,7 +28,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/gn2509629/zeuscoin.git"
+- "url": "https://github.com/zeuscoin-project/zeuscoin.git"
   "dir": "zeuscoin"
 files: []
 script: |

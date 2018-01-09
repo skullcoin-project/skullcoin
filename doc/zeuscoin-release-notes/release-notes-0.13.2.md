@@ -7,7 +7,7 @@ It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/gn2509629/zeuscoin/issues>
+  <https://github.com/zeuscoin-project/zeuscoin/issues>
 
 Compatibility
 ==============

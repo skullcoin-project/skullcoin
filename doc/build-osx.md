@@ -29,7 +29,7 @@ Build Zeuscoin Core
 
 1. Clone the zeuscoin source code and cd into `zeuscoin`
 
-        git clone https://github.com/gn2509629/zeuscoin
+        git clone https://github.com/zeuscoin-project/zeuscoin
         cd zeuscoin
 
 2.  Build zeuscoin-core:
