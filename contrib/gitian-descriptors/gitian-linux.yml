@@ -113,6 +113,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
+  chmod +x -R zeuscoin
   cd zeuscoin
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
