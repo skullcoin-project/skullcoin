@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Zeuscoin"
-            VALUE "FileDescription",    "zeuscoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "SkullCoin"
+            VALUE "FileDescription",    "skullcoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "zeuscoin-cli"
+            VALUE "InternalName",       "skullcoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "zeuscoin-cli.exe"
-            VALUE "ProductName",        "zeuscoin-cli"
+            VALUE "OriginalFilename",   "skullcoin-cli.exe"
+            VALUE "ProductName",        "skullcoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

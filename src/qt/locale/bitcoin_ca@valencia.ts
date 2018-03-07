@@ -62,12 +62,12 @@
         <translation>S'estan rebent les adreces</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes són les vostres adreces de Zeuscoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your SkullCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes són les vostres adreces de SkullCoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes són les vostres adreces Zeuscoin per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
+        <source>These are your SkullCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes són les vostres adreces SkullCoin per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -298,8 +298,8 @@
         <translation>S'estan reindexant els blocs al disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Envia monedes a una adreça Zeuscoin</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Envia monedes a una adreça SkullCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>Encripta les claus privades pertanyents al moneder</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seua adreça de Zeuscoin per provar que les poseeixes</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seua adreça de SkullCoin per provar que les poseeixes</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Zeuscoin específica.</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça SkullCoin específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -374,8 +374,8 @@
         <translation>Barra d'eines de les pestanyes</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Sol·licita pagaments (genera codis QR i zeuscoin: URI)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Sol·licita pagaments (genera codis QR i skullcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -386,8 +386,8 @@
         <translation>Mostra la llista d'adreces de recepció i etiquetes utilitzades</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Obri una zeuscoin: sol·licitud d'URI o pagament</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Obri una skullcoin: sol·licitud d'URI o pagament</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -658,8 +658,8 @@
         <translation>Edita les adreces d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Zeuscoin address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Zeuscoin vàlida.</translation>
+        <source>The entered address "%1" is not a valid SkullCoin address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de SkullCoin vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -884,16 +884,16 @@
         <translation>&amp;Gasta el canvi sense confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Zeuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obri el port del client de Zeuscoin al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
+        <source>Automatically open the SkullCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obri el port del client de SkullCoin al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port obert amb &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Zeuscoin network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Zeuscoin a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the SkullCoin network through a SOCKS5 proxy.</source>
+        <translation>Connecta a la xarxa SkullCoin a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -995,8 +995,8 @@
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zeuscoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Zeuscoin un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SkullCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa SkullCoin un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1070,8 +1070,8 @@
         <translation>Error en la sol·licitud de pagament</translation>
     </message>
     <message>
-        <source>Cannot start zeuscoin: click-to-pay handler</source>
-        <translation>No es pot iniciar zeuscoin: gestor clica-per-pagar</translation>
+        <source>Cannot start skullcoin: click-to-pay handler</source>
+        <translation>No es pot iniciar skullcoin: gestor clica-per-pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1086,8 +1086,8 @@
         <translation>Adreça de pagament no vàlida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Zeuscoin address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Zeuscoin no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SkullCoin address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de SkullCoin no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1172,8 +1172,8 @@
         <translation>Import</translation>
     </message>
     <message>
-        <source>Enter a Zeuscoin address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Zeuscoin (p. ex. %1)</translation>
+        <source>Enter a SkullCoin address (e.g. %1)</source>
+        <translation>Introduïu una adreça de SkullCoin (p. ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1452,8 +1452,8 @@
         <translation>R&amp;eutilitza una adreça de recepció anterior (no recomanat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Zeuscoin network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Zeuscoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SkullCoin network.</source>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa SkullCoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1673,8 +1673,8 @@
         <translation>total com a mínim</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for zeuscoin transactions than the network can process.</source>
-        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi haja menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirme una vegada hi haja més demanda de transaccions de zeuscoins que la xarxa puga processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for skullcoin transactions than the network can process.</source>
+        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi haja menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirme una vegada hi haja més demanda de transaccions de skullcoins que la xarxa puga processar.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -1813,8 +1813,8 @@
         <translation>La sol·licitud de pagament ha vençut.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Zeuscoin address</source>
-        <translation>Avís: adreça Zeuscoin no vàlida</translation>
+        <source>Warning: Invalid SkullCoin address</source>
+        <translation>Avís: adreça SkullCoin no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1848,8 +1848,8 @@
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-        <source>The Zeuscoin address to send the payment to</source>
-        <translation>L'adreça Zeuscoin on enviar el pagament</translation>
+        <source>The SkullCoin address to send the payment to</source>
+        <translation>L'adreça SkullCoin on enviar el pagament</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1868,8 +1868,8 @@
         <translation>Elimina esta entrada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less zeuscoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys zeuscoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less skullcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys skullcoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -1892,8 +1892,8 @@
         <translation>Introduïu una etiqueta per a esta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the zeuscoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Zeuscoin network.</source>
-        <translation>Un missatge que s'ha adjuntat al zeuscoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Zeuscoin.</translation>
+        <source>A message that was attached to the skullcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SkullCoin network.</source>
+        <translation>Un missatge que s'ha adjuntat al skullcoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa SkullCoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1933,12 +1933,12 @@
         <translation>&amp;Signa el missatge</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive zeuscoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les zeuscoins que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive skullcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les skullcoins que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
-        <source>The Zeuscoin address to sign the message with</source>
-        <translation>L'adreça Zeuscoin amb què signar el missatge</translation>
+        <source>The SkullCoin address to sign the message with</source>
+        <translation>L'adreça SkullCoin amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1969,8 +1969,8 @@
         <translation>Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Zeuscoin address</source>
-        <translation>Signa el missatge per provar que ets propietari d'esta adreça Zeuscoin</translation>
+        <source>Sign the message to prove you own this SkullCoin address</source>
+        <translation>Signa el missatge per provar que ets propietari d'esta adreça SkullCoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1993,12 +1993,12 @@
         <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-        <source>The Zeuscoin address the message was signed with</source>
-        <translation>L'adreça Zeuscoin amb què va ser signat el missatge</translation>
+        <source>The SkullCoin address the message was signed with</source>
+        <translation>L'adreça SkullCoin amb què va ser signat el missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Zeuscoin address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Zeuscoin específica</translation>
+        <source>Verify the message to ensure it was signed with the specified SkullCoin address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça SkullCoin específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2558,8 +2558,8 @@
         <translation>Executa en segon pla com a programa dimoni i accepta ordes</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

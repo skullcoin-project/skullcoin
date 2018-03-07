@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin மையம்</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Zeuscoin tests.
+Utilities to generate test vectors for the data-driven SkullCoin tests.
 
 Usage: 
 

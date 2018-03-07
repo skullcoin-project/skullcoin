@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Zeuscoin-Qt</string>
+  <string>SkullCoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Zeuscoin-Qt</string>
+  <string>SkullCoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.zeuscoin.Zeuscoin-Qt</string>
+  <string>org.skullcoin.SkullCoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.zeuscoin.ZeuscoinPayment</string>
+      <string>org.skullcoin.SkullCoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>zeuscoin</string>
+        <string>skullcoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.zeuscoin.paymentrequest</string>
+      <string>org.skullcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Zeuscoin payment request</string>
+      <string>SkullCoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-zeuscoin-payment-request</string>
+        <string>application/x-skullcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>zeuscoinpaymentrequest</string>
+          <string>skullcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.zeuscoin.paymentrequest</string>
+        <string>org.skullcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

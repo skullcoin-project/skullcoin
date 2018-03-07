@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.zeuscoin.Zeuscoin-Qt";
+        return @"org.skullcoin.SkullCoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

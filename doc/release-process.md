@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/zeuscoin-project/zeuscoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/skullcoin-project/skullcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -31,12 +31,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/zeuscoin-project/gitian.sigs.zsc.git
-    git clone https://github.com/zeuscoin-project/zeuscoin-detached-sigs.git
+    git clone https://github.com/skullcoin-project/gitian.sigs.skc.git
+    git clone https://github.com/skullcoin-project/skullcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/zeuscoin-project/zeuscoin.git
+    git clone https://github.com/skullcoin-project/skullcoin.git
 
-### Zeuscoin maintainers/release engineers, update version in sources
+### SkullCoin maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -75,16 +75,16 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./zeuscoin
+    pushd ./skullcoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
     git checkout v${VERSION}
     popd
 
-Ensure your gitian.sigs.zsc are up-to-date if you wish to gverify your builds against other Gitian signatures.
+Ensure your gitian.sigs.skc are up-to-date if you wish to gverify your builds against other Gitian signatures.
 
-    pushd ./gitian.sigs.zsc
+    pushd ./gitian.sigs.skc
     git pull
     popd
 
@@ -109,7 +109,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../zeuscoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../skullcoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -117,95 +117,95 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url zeuscoin=/path/to/zeuscoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url skullcoin=/path/to/skullcoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Zeuscoin Core for Linux, Windows, and OS X:
+### Build and sign SkullCoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit zeuscoin=v${VERSION} ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/zeuscoin-*.tar.gz build/out/src/zeuscoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit skullcoin=v${VERSION} ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/skullcoin-*.tar.gz build/out/src/skullcoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit zeuscoin=v${VERSION} ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/zeuscoin-*-win-unsigned.tar.gz inputs/zeuscoin-win-unsigned.tar.gz
-    mv build/out/zeuscoin-*.zip build/out/zeuscoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit skullcoin=v${VERSION} ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/skullcoin-*-win-unsigned.tar.gz inputs/skullcoin-win-unsigned.tar.gz
+    mv build/out/skullcoin-*.zip build/out/skullcoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit zeuscoin=v${VERSION} ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/zeuscoin-*-osx-unsigned.tar.gz inputs/zeuscoin-osx-unsigned.tar.gz
-    mv build/out/zeuscoin-*.tar.gz build/out/zeuscoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit skullcoin=v${VERSION} ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/skullcoin-*-osx-unsigned.tar.gz inputs/skullcoin-osx-unsigned.tar.gz
+    mv build/out/skullcoin-*.tar.gz build/out/skullcoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`zeuscoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`zeuscoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`zeuscoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `zeuscoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`zeuscoin-${VERSION}-osx-unsigned.dmg`, `zeuscoin-${VERSION}-osx64.tar.gz`)
-  5. Gitian signatures (in `gitian.sigs.zsc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
+  1. source tarball (`skullcoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`skullcoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`skullcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `skullcoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`skullcoin-${VERSION}-osx-unsigned.dmg`, `skullcoin-${VERSION}-osx64.tar.gz`)
+  5. Gitian signatures (in `gitian.sigs.skc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import zeuscoin/contrib/gitian-keys/*.pgp
+    gpg --import skullcoin/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-linux ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-win-unsigned ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-osx-unsigned ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-linux ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-win-unsigned ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-osx-unsigned ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
 
-Commit your signature to gitian.sigs.zsc:
+Commit your signature to gitian.sigs.skc:
 
-    pushd gitian.sigs.zsc
+    pushd gitian.sigs.skc
     git add ${VERSION}-linux/${SIGNER}
     git add ${VERSION}-win-unsigned/${SIGNER}
     git add ${VERSION}-osx-unsigned/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.zsc tree
+    git push  # Assuming you can push to the gitian.sigs.skc tree
     popd
 
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [zeuscoin-detached-sigs](https://github.com/zeuscoin-project/zeuscoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [skullcoin-detached-sigs](https://github.com/skullcoin-project/skullcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-osx-signed ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/zeuscoin-osx-signed.dmg ../zeuscoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-osx-signed ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/skullcoin-osx-signed.dmg ../skullcoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../zeuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-win-signed ../zeuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/zeuscoin-*win64-setup.exe ../zeuscoin-${VERSION}-win64-setup.exe
-    mv build/out/zeuscoin-*win32-setup.exe ../zeuscoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../skullcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-win-signed ../skullcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/skullcoin-*win64-setup.exe ../skullcoin-${VERSION}-win64-setup.exe
+    mv build/out/skullcoin-*win32-setup.exe ../skullcoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
 
-    pushd gitian.sigs.zsc
+    pushd gitian.sigs.skc
     git add ${VERSION}-osx-signed/${SIGNER}
     git add ${VERSION}-win-signed/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.zsc tree
+    git push  # Assuming you can push to the gitian.sigs.skc tree
     popd
 
 ### After 3 or more people have gitian-built and their results match:
@@ -218,23 +218,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-zeuscoin-${VERSION}-aarch64-linux-gnu.tar.gz
-zeuscoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-zeuscoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-zeuscoin-${VERSION}-x86_64-linux-gnu.tar.gz
-zeuscoin-${VERSION}-osx64.tar.gz
-zeuscoin-${VERSION}-osx.dmg
-zeuscoin-${VERSION}.tar.gz
-zeuscoin-${VERSION}-win32-setup.exe
-zeuscoin-${VERSION}-win32.zip
-zeuscoin-${VERSION}-win64-setup.exe
-zeuscoin-${VERSION}-win64.zip
+skullcoin-${VERSION}-aarch64-linux-gnu.tar.gz
+skullcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+skullcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+skullcoin-${VERSION}-x86_64-linux-gnu.tar.gz
+skullcoin-${VERSION}-osx64.tar.gz
+skullcoin-${VERSION}-osx.dmg
+skullcoin-${VERSION}.tar.gz
+skullcoin-${VERSION}-win32-setup.exe
+skullcoin-${VERSION}-win32.zip
+skullcoin-${VERSION}-win64-setup.exe
+skullcoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the zeuscoin.org server, nor put them in the torrent*.
+space *do not upload these to the skullcoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -244,24 +244,24 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the zeuscoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the skullcoin.org server.
 
 ```
 
-- Update zeuscoin.org version
+- Update skullcoin.org version
 
 - Announce the release:
 
-  - zeuscoin-dev and zeuscoin-dev mailing list
+  - skullcoin-dev and skullcoin-dev mailing list
 
-  - blog.zeuscoin.org blog post
+  - blog.skullcoin.org blog post
 
-  - Update title of #zeuscoin and #zeuscoin-dev on Freenode IRC
+  - Update title of #skullcoin and #skullcoin-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Zeuscoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/SkullCoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/zeuscoin-project/zeuscoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/skullcoin-project/skullcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

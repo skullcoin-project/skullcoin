@@ -62,12 +62,12 @@
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SkullCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Zeuscoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your SkullCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите SkullCoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -318,7 +318,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
+        <source>Send coins to a SkullCoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -342,7 +342,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
+        <source>SkullCoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -370,12 +370,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Zeuscoin адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя SkullCoin адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Zeuscoin адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените SkullCoin адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -394,8 +394,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Zeuscoin: URIs)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и SkullCoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Отворете Zeuscoin: URI  или заявка за плащане</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Отворете SkullCoin: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -450,8 +450,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Zeuscoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Zeuscoin команди</translation>
+        <source>Show the %1 help message to get a list with possible SkullCoin command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни SkullCoin команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -690,7 +690,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Zeuscoin address.</source>
+        <source>The entered address "%1" is not a valid SkullCoin address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -904,16 +904,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Zeuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Zeuscoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the SkullCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия SkullCoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Zeuscoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Zeuscoin мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the SkullCoin network through a SOCKS5 proxy.</source>
+        <translation>Свързване с SkullCoin мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1007,7 +1007,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zeuscoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SkullCoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1062,8 +1062,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start zeuscoin: click-to-pay handler</source>
-        <translation>Zeuscoin не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start skullcoin: click-to-pay handler</source>
+        <translation>SkullCoin не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1136,8 +1136,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Zeuscoin address (e.g. %1)</source>
-        <translation>Въведете Zeuscoin адрес (например: %1)</translation>
+        <source>Enter a SkullCoin address (e.g. %1)</source>
+        <translation>Въведете SkullCoin адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1689,8 +1689,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Zeuscoin address</source>
-        <translation>Внимание: Невалиден Zeuscoin адрес</translation>
+        <source>Warning: Invalid SkullCoin address</source>
+        <translation>Внимание: Невалиден SkullCoin адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1809,7 +1809,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Zeuscoin address</source>
+        <source>Sign the message to prove you own this SkullCoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1825,7 +1825,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Zeuscoin address</source>
+        <source>Verify the message to ensure it was signed with the specified SkullCoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2346,8 +2346,8 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin ядро</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin ядро</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Zeuscoin"
-#define QAPP_ORG_DOMAIN "zeuscoin.org"
-#define QAPP_APP_NAME_DEFAULT "Zeuscoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Zeuscoin-Qt-testnet"
+#define QAPP_ORG_NAME "SkullCoin"
+#define QAPP_ORG_DOMAIN "skullcoin.org"
+#define QAPP_APP_NAME_DEFAULT "SkullCoin-Qt"
+#define QAPP_APP_NAME_TESTNET "SkullCoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H
