@@ -1,5 +1,5 @@
 ### Qos ###
 
-This is a Linux bash script that will set up tc to limit the outgoing bandwidth for connections to the Zeuscoin network. It limits outbound TCP traffic with a source or destination port of 9343, but not if the destination IP is within a LAN (defined as 192.168.x.x).
+This is a Linux bash script that will set up tc to limit the outgoing bandwidth for connections to the SkullCoin network. It limits outbound TCP traffic with a source or destination port of 9423, but not if the destination IP is within a LAN (defined as 192.168.x.x).
 
-This means one can have an always-on zeuscoind instance running, and another local zeuscoind/zeuscoin-qt instance which connects to this node and receives blocks from it.
+This means one can have an always-on skullcoind instance running, and another local skullcoind/skullcoin-qt instance which connects to this node and receives blocks from it.

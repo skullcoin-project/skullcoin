@@ -1,5 +1,5 @@
 ---
-name: "zeuscoin-dmg-signer"
+name: "skullcoin-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/zeuscoin-project/zeuscoin-detached-sigs.git"
+- "url": "https://github.com/skullcoin-project/skullcoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "zeuscoin-osx-unsigned.tar.gz"
+- "skullcoin-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=zeuscoin-osx-unsigned.tar.gz
-  SIGNED=zeuscoin-osx-signed.dmg
+  UNSIGNED=skullcoin-osx-unsigned.tar.gz
+  SIGNED=skullcoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

@@ -158,16 +158,16 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Pošalji novčiće na Zeuscoin adresu</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Pošalji novčiće na SkullCoin adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -406,8 +406,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>Information</source>

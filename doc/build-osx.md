@@ -24,17 +24,17 @@ In case you want to build the disk image with `make deploy` (.dmg / optional), y
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Zeuscoin Core
+Build SkullCoin Core
 ------------------------
 
-1. Clone the zeuscoin source code and cd into `zeuscoin`
+1. Clone the skullcoin source code and cd into `skullcoin`
 
-        git clone https://github.com/zeuscoin-project/zeuscoin
-        cd zeuscoin
+        git clone https://github.com/skullcoin-project/skullcoin
+        cd skullcoin
 
-2.  Build zeuscoin-core:
+2.  Build skullcoin-core:
 
-    Configure and build the headless zeuscoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless skullcoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -53,37 +53,37 @@ Build Zeuscoin Core
 Running
 -------
 
-Zeuscoin Core is now available at `./src/zeuscoind`
+SkullCoin Core is now available at `./src/skullcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=zeuscoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Zeuscoin/zeuscoin.conf"
+    echo -e "rpcuser=skullcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/SkullCoin/skullcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Zeuscoin/zeuscoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/SkullCoin/skullcoin.conf"
 
-The first time you run zeuscoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run skullcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Zeuscoin/debug.log
+    tail -f $HOME/Library/Application\ Support/SkullCoin/debug.log
 
 Other commands:
 -------
 
-    ./src/zeuscoind -daemon # Starts the zeuscoin daemon.
-    ./src/zeuscoin-cli --help # Outputs a list of command-line options.
-    ./src/zeuscoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/skullcoind -daemon # Starts the skullcoin daemon.
+    ./src/skullcoin-cli --help # Outputs a list of command-line options.
+    ./src/skullcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for zeuscoin development.
+You can use Qt Creator as an IDE, for skullcoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "zeuscoin-qt" as project name, enter src/qt as location
+4. Enter "skullcoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

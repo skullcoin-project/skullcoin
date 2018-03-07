@@ -62,12 +62,12 @@
         <translation>адрасы Прымання</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тут знаходзяцца Zeuscoin-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
+        <source>These are your SkullCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тут знаходзяцца SkullCoin-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Тут знаходзяцца Zeuscoin-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
+        <source>These are your SkullCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Тут знаходзяцца SkullCoin-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -298,8 +298,8 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Даслаць манеты на Zeuscoin-адрас</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Даслаць манеты на SkullCoin-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Zeuscoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Падпісаць паведамленне з дапамогай SkullCoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Zeuscoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Спраўдзіць паведамленне з дапамогай SkullCoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -370,8 +370,8 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Запатрабаваць плацёж (генеруецца QR-код для zeuscoin URI)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Запатрабаваць плацёж (генеруецца QR-код для skullcoin URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -382,8 +382,8 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Адкрыць zeuscoin: URI ці запыт плацяжу</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Адкрыць skullcoin: URI ці запыт плацяжу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1258,8 +1258,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

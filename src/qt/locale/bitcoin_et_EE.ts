@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -760,8 +760,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>Information</source>

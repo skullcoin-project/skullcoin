@@ -142,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Nosūtīt bitkoinus uz Zeuscoin adresi</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Nosūtīt bitkoinus uz SkullCoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Zeuscoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām SkullCoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Zeuscoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām SkullCoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un zeuscoin: URIs)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un skullcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Atvērt zeuscoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Atvērt skullcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -499,15 +499,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt zeuscoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt skullcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Zeuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Zeuscoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the SkullCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt SkullCoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -559,7 +559,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Zeuscoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt SkullCoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -593,8 +593,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zeuscoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Zeuscoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SkullCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar SkullCoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -852,7 +852,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Zeuscoin Kontroles Funkcijas</translation>
+        <translation>SkullCoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1027,8 +1027,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Zeuscoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Zeuscoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this SkullCoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs SkullCoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1124,8 +1124,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

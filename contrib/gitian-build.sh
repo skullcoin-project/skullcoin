@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/zeuscoin-project/zeuscoin
+url=https://github.com/skullcoin-project/skullcoin
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the zeuscoin, gitian-builder, gitian.sigs.zsc, and zeuscoin-detached-sigs.
+Run this script from the directory containing the skullcoin, gitian-builder, gitian.sigs.skc, and skullcoin-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/zeuscoin-project/zeuscoin
+-u|--url	Specify the URL of the repository. Default is https://github.com/skullcoin-project/skullcoin
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -232,8 +232,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/zeuscoin-project/gitian.sigs.zsc.git
-    git clone https://github.com/zeuscoin-project/zeuscoin-detached-sigs.git
+    git clone https://github.com/skullcoin-project/gitian.sigs.skc.git
+    git clone https://github.com/skullcoin-project/skullcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./zeuscoin
+pushd ./skullcoin
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./zeuscoin-binaries/${VERSION}
+	mkdir -p ./skullcoin-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../zeuscoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../skullcoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeuscoin=${COMMIT} --url zeuscoin=${url} ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/zeuscoin-*.tar.gz build/out/src/zeuscoin-*.tar.gz ../zeuscoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit skullcoin=${COMMIT} --url skullcoin=${url} ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/skullcoin-*.tar.gz build/out/src/skullcoin-*.tar.gz ../skullcoin-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeuscoin=${COMMIT} --url zeuscoin=${url} ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/zeuscoin-*-win-unsigned.tar.gz inputs/zeuscoin-win-unsigned.tar.gz
-	    mv build/out/zeuscoin-*.zip build/out/zeuscoin-*.exe ../zeuscoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit skullcoin=${COMMIT} --url skullcoin=${url} ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/skullcoin-*-win-unsigned.tar.gz inputs/skullcoin-win-unsigned.tar.gz
+	    mv build/out/skullcoin-*.zip build/out/skullcoin-*.exe ../skullcoin-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,10 +295,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit zeuscoin=${COMMIT} --url zeuscoin=${url} ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/zeuscoin-*-osx-unsigned.tar.gz inputs/zeuscoin-osx-unsigned.tar.gz
-	    mv build/out/zeuscoin-*.tar.gz build/out/zeuscoin-*.dmg ../zeuscoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit skullcoin=${COMMIT} --url skullcoin=${url} ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/skullcoin-*-osx-unsigned.tar.gz inputs/skullcoin-osx-unsigned.tar.gz
+	    mv build/out/skullcoin-*.tar.gz build/out/skullcoin-*.dmg ../skullcoin-binaries/${VERSION}
 	fi
 	popd
 
@@ -308,7 +308,7 @@ then
             echo ""
             echo "Committing ${VERSION} Unsigned Sigs"
             echo ""
-            pushd gitian.sigs.zsc
+            pushd gitian.sigs.skc
             git add ${VERSION}-linux/${SIGNER}
             git add ${VERSION}-win-unsigned/${SIGNER}
             git add ${VERSION}-osx-unsigned/${SIGNER}
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-linux ../zeuscoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-linux ../skullcoin/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-win-unsigned ../zeuscoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-win-unsigned ../skullcoin/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX	
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""	
-	./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-osx-unsigned ../zeuscoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-osx-unsigned ../skullcoin/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-osx-signed ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-osx-signed ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.zsc/ -r ${VERSION}-osx-signed ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml	
+	./bin/gverify -v -d ../gitian.sigs.skc/ -r ${VERSION}-osx-signed ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml	
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../zeuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/zeuscoin-*win64-setup.exe ../zeuscoin-binaries/${VERSION}
-	    mv build/out/zeuscoin-*win32-setup.exe ../zeuscoin-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../skullcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/skullcoin-*win64-setup.exe ../skullcoin-binaries/${VERSION}
+	    mv build/out/skullcoin-*win32-setup.exe ../skullcoin-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,16 +371,16 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.zsc/ ../zeuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/zeuscoin-osx-signed.dmg ../zeuscoin-binaries/${VERSION}/zeuscoin-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.skc/ ../skullcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/skullcoin-osx-signed.dmg ../skullcoin-binaries/${VERSION}/skullcoin-${VERSION}-osx.dmg
 	fi
 	popd
 
         if [[ $commitFiles = true ]]
         then
             # Commit Sigs
-            pushd gitian.sigs.zsc
+            pushd gitian.sigs.skc
             echo ""
             echo "Committing ${VERSION} Signed Sigs"
             echo ""

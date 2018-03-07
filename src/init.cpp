@@ -506,8 +506,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/zeuscoin-project/zeuscoin>";
-    const std::string URL_WEBSITE = "<https://zeuscoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/skullcoin-project/skullcoin>";
+    const std::string URL_WEBSITE = "<https://skullcoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -788,7 +788,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Zeuscoin version %s\n", FormatFullVersion());
+    LogPrintf("SkullCoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

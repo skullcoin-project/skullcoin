@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Enviar monedas a una dirección Zeuscoin</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Enviar monedas a una dirección SkullCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Zeuscoin para demostrar la propiedad</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones SkullCoin para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Zeuscoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones SkullCoin concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Zeuscoin)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de SkullCoin)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Abrir un zeuscoin: URI o petición de pago</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Abrir un skullcoin: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Zeuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Zeuscoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the SkullCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente SkullCoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zeuscoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Zeuscoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SkullCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red SkullCoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Zeuscoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Zeuscoin</translation>
+        <source>Sign the message to prove you own this SkullCoin address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección SkullCoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Zeuscoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Zeuscoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified SkullCoin address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección SkullCoin indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Núcleo de Zeuscoin</translation>
+        <source>SkullCoin Core</source>
+        <translation>Núcleo de SkullCoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

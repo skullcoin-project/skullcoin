@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || IsArgSet("-?") || IsArgSet("-h") || IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s zeuscoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s skullcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  zeuscoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded zeuscoin transaction") + "\n" +
-              "  zeuscoin-tx [options] -create [commands]   " + _("Create hex-encoded zeuscoin transaction") + "\n" +
+              "  skullcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded skullcoin transaction") + "\n" +
+              "  skullcoin-tx [options] -create [commands]   " + _("Create hex-encoded skullcoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

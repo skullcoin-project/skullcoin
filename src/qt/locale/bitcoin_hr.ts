@@ -54,8 +54,8 @@
         <translation>&amp;Odaberi</translation>
     </message>
     <message>
-        <source>These are your Zeuscoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Zeuscoin adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your SkullCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše SkullCoin adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -174,8 +174,8 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Zeuscoin address</source>
-        <translation>Slanje novca na zeuscoin adresu</translation>
+        <source>Send coins to a SkullCoin address</source>
+        <translation>Slanje novca na skullcoin adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -198,8 +198,8 @@
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
     <message>
-        <source>Zeuscoin</source>
-        <translation>Zeuscoin</translation>
+        <source>SkullCoin</source>
+        <translation>SkullCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -226,12 +226,12 @@
         <translation>Šifriranje privatnih ključeva koji u novčaniku</translation>
     </message>
     <message>
-        <source>Sign messages with your Zeuscoin addresses to prove you own them</source>
-        <translation>Poruku potpišemo s zeuscoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
+        <source>Sign messages with your SkullCoin addresses to prove you own them</source>
+        <translation>Poruku potpišemo s skullcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Zeuscoin addresses</source>
-        <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom zeuscoin adresom</translation>
+        <source>Verify messages to ensure they were signed with specified SkullCoin addresses</source>
+        <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom skullcoin adresom</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -250,8 +250,8 @@
         <translation>Traka kartica</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and zeuscoin: URIs)</source>
-        <translation>Zatraži uplatu (stvara QR kod i zeuscoin: URI adresu)</translation>
+        <source>Request payments (generates QR codes and skullcoin: URIs)</source>
+        <translation>Zatraži uplatu (stvara QR kod i skullcoin: URI adresu)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -262,16 +262,16 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje novca</translation>
     </message>
     <message>
-        <source>Open a zeuscoin: URI or payment request</source>
-        <translation>Otvori zeuscoin: URI adresu ili zahtjev za uplatu</translation>
+        <source>Open a skullcoin: URI or payment request</source>
+        <translation>Otvori skullcoin: URI adresu ili zahtjev za uplatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Zeuscoin network</source>
-        <translation><numerusform>%n aktivna veza na Zeuscoin mrežu</numerusform><numerusform>%n aktivnih veza na Zeuscoin mrežu</numerusform><numerusform>%n aktivnih veza na Zeuscoin mrežu</numerusform></translation>
+        <source>%n active connection(s) to SkullCoin network</source>
+        <translation><numerusform>%n aktivna veza na SkullCoin mrežu</numerusform><numerusform>%n aktivnih veza na SkullCoin mrežu</numerusform><numerusform>%n aktivnih veza na SkullCoin mrežu</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -423,11 +423,11 @@
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Oznaka zeuscoin adrese</translation>
+        <translation>Oznaka skullcoin adrese</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Zeuscoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
+        <translation>SkullCoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -568,8 +568,8 @@
         <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     </message>
     <message>
-        <source>Automatically open the Zeuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port Zeuscoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
+        <source>Automatically open the SkullCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvori port SkullCoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -617,7 +617,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Izaberite željeni najmanji dio zeuscoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
+        <translation>Izaberite željeni najmanji dio skullcoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -643,8 +643,8 @@
         <translation>Oblik</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zeuscoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Zeuscoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SkullCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s SkullCoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -1034,8 +1034,8 @@
         <translation>Izvršavaj u pozadini kao uslužnik i prihvaćaj komande</translation>
     </message>
     <message>
-        <source>Zeuscoin Core</source>
-        <translation>Zeuscoin Core</translation>
+        <source>SkullCoin Core</source>
+        <translation>SkullCoin Core</translation>
     </message>
     <message>
         <source>Block creation options:</source>

@@ -1,41 +1,41 @@
-Zeuscoin Core 0.14.2
+SkullCoin Core 0.14.2
 =====================
 
 Setup
 ---------------------
-Zeuscoin Core is the original Zeuscoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Zeuscoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+SkullCoin Core is the original SkullCoin client and it builds the backbone of the network. However, it downloads and stores the entire history of SkullCoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Zeuscoin Core, visit [zeuscoin.org](https://zeuscoin.org).
+To download SkullCoin Core, visit [skullcoin.org](https://skullcoin.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Zeuscoin on your native platform.
+The following are some helpful notes on how to run SkullCoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/zeuscoin-qt` (GUI) or
-- `bin/zeuscoind` (headless)
+- `bin/skullcoin-qt` (GUI) or
+- `bin/skullcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run zeuscoin-qt.exe.
+Unpack the files into a directory, and then run skullcoin-qt.exe.
 
 ### OS X
 
-Drag Zeuscoin-Core to your applications folder, and then run Zeuscoin-Core.
+Drag SkullCoin-Core to your applications folder, and then run SkullCoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Zeuscoin Wiki](https://zeuscoin.info/)
+* See the documentation at the [SkullCoin Wiki](https://skullcoin.info/)
 for help and more information.
-* Ask for help on [#zeuscoin](http://webchat.freenode.net?channels=zeuscoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=zeuscoin).
-* Ask for help on the [ZeuscoinTalk](https://zeuscointalk.io/) forums.
+* Ask for help on [#skullcoin](http://webchat.freenode.net?channels=skullcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=skullcoin).
+* Ask for help on the [SkullCoinTalk](https://skullcointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Zeuscoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build SkullCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Zeuscoin on your native platfo
 
 Development
 ---------------------
-The Zeuscoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The SkullCoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/zeuscoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/skullcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Zeuscoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [ZeuscoinTalk](https://zeuscointalk.io/) forums.
-* Discuss general Zeuscoin development on #zeuscoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=zeuscoin-dev).
+* Discuss on the [SkullCoinTalk](https://skullcointalk.io/) forums.
+* Discuss general SkullCoin development on #skullcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=skullcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

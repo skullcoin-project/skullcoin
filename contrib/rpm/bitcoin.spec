@@ -334,10 +334,10 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/bitcoin.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 9342
-%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 9343
-%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 19342
-%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 19343
+%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 9422
+%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 9423
+%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 19422
+%{_sbindir}/semanage port -a -t bitcoin_port_t -p tcp 19423
 %{_sbindir}/fixfiles -R bitcoin-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/bitcoin || :
 fi
@@ -353,10 +353,10 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 9342
-	%{_sbindir}/semanage port -d -p tcp 9343
-	%{_sbindir}/semanage port -d -p tcp 19342
-	%{_sbindir}/semanage port -d -p tcp 19343
+	%{_sbindir}/semanage port -d -p tcp 9422
+	%{_sbindir}/semanage port -d -p tcp 9423
+	%{_sbindir}/semanage port -d -p tcp 19422
+	%{_sbindir}/semanage port -d -p tcp 19423
 	for selinuxvariant in %{selinux_variants}; do
 		%{_sbindir}/semodule -s ${selinuxvariant} -r bitcoin &> /dev/null || :
 	done
